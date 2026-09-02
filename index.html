@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+    <title>Hot News</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #eeeeee;
+            font-family: Arial, sans-serif;
+            color: #222;
+        }
+
+        /* KOTAK UTAMA */
+        .page {
+            width: min(100%, 700px);
+            margin: 20px auto;
+            background: white;
+            min-height: 100vh;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        /* HEADER */
+        .header {
+            height: 65px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 20px;
+
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* TOMBOL MENU */
+        .menu-button {
+            border: none;
+            background: transparent;
+
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* SEARCH */
+        .search-container {
+            width: 75%;
+            max-width: 450px;
+
+            margin: 25px auto;
+
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            padding: 8px 15px;
+
+            border: 1px solid #ddd;
+            border-radius: 30px;
+
+            background: #f5f5f5;
+        }
+
+        .search-container input {
+            width: 100%;
+
+            border: none;
+            outline: none;
+
+            background: transparent;
+
+            font-size: 15px;
+        }
+
+        /* ARTIKEL */
+        .main-article {
+            padding: 0 25px 40px;
+        }
+
+        /* GAMBAR */
+        .article-image {
+            width: 100%;
+            height: 280px;
+
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .article-image img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+        }
+
+        /* JUDUL */
+        .article-title {
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+            font-size: 28px;
+            line-height: 1.2;
+        }
+
+        /* ISI */
+        .article-content {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* HP */
+        @media (max-width: 600px) {
+
+            .page {
+                margin: 0;
+                border-radius: 0;
+            }
+
+            .article-image {
+                height: 220px;
+            }
+
+            .article-title {
+                font-size: 24px;
+            }
+
+            .main-article {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <div class="logo">
+                MENU
+            </div>
+
+           <button id="menuButton">☰</button>
+
+<div id="menuPanel">
+    <div>Beranda</div>
+    <div>Berita Terbaru</div>
+    <div>Nasional</div>
+    <div>Lingkungan</div>
+    <div>Teknologi</div>
+    <div>Tentang Kami</div>
+</div>
+
+        </header>
+
+
+        <!-- ISI -->
+        <main>
+
+            <!-- SEARCH -->
+            <div class="search-container">
+
+                <span>🔍</span>
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search..."
+                >
+
+            </div>
+
+
+            <!-- ARTIKEL -->
+            <article class="main-article">
+
+                <div class="article-image">
+
+                    <img
+                        src="beritakalimantan.png"
+                      >
+
+                </div>
+
+
+                <h1 class="article-title">
+                    Karhutla Kembali Mengancam Kalimantan, Pemerintah Perkuat Operasi Pemadaman
+                </h1>
+
+
+                <div class="article-content">
+
+                    <p>
+                        Kebakaran hutan dan lahan kembali menjadi perhatian di sejumlah wilayah Kalimantan. Pemerintah memperkuat pemantauan titik panas, pemadaman darat dan udara, serta pencegahan agar api tidak kembali menyebar.
+
+                    </p>
+
+                    <p>
+                        Berdasarkan pemantauan Kementerian Kehutanan, jumlah titik panas di Kalimantan masih mengalami perubahan dari waktu ke waktu. Pada 17 Agustus 2026, misalnya, terdeteksi 93 titik panas dengan tingkat kepercayaan tinggi di Kalimantan Barat, 28 titik di Kalimantan Tengah, dan 2 titik di Kalimantan Selatan. 
+                    </p>
+                  
+                   <p>Penanganan dilakukan melalui patroli, pemantauan hotspot, pemadaman di darat, hingga pemadaman menggunakan helikopter. Pemerintah juga menambah personel dan sumber air untuk membantu proses pemadaman serta pendinginan area yang telah terbakar. 
+                    </p>
+                   
+                    <p> Kalimantan Selatan
+                       Salah satu tantangan terbesar
+                       berada di kawasan lahan gambut
+                       Api yang terlihat padam dari
+                       permukaan belum tentu benar-benar hilang karena kebakaran
+                       dapat terus berlangsung di
+                       bawah permukaan tanah dan
+                       menghasilkan asap.
+                    </p>
+                   
+                    <p>Di Kalimantan Selatan, penanganan juga diperkuat dengan operasi darat dan udara. Pemerintah melibatkan ratusan personel serta helikopter untuk melakukan pemadaman dan mencegah api kembali muncul. 
+                    
+                     </p>
+                     
+                    <p>Selain pemadaman, pemerintah juga melakukan penyelidikan terhadap dugaan pelanggaran yang berkaitan dengan karhutla. Kementerian Kehutanan menyatakan bahwa dugaan tindak pidana, termasuk aktivitas individu maupun korporasi, sedang ditindak lanjuti. 
+                    </p>
+                    
+                    <p>Karhutla bukan hanya persoalan hilangnya vegetasi. Asap dari kebakaran dapat mengganggu aktivitas masyarakat dan kualitas udara di wilayah terdampak. Karena itu, pemantauan titik panas dan pencegahan sejak dini menjadi bagian penting dalam pengendalian kebakaran.
+                    </p>
+                    <p>
+                        Nanti search bar juga bisa kita bikin
+                        tetap mengikuti layar ketika pembaca
+                        mulai scroll ke bawah.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </main>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
